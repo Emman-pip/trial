@@ -11,7 +11,7 @@
     top:0;
     right:0;
     left:0;
-    opacity: 70%;
+    opacity: 90%;
 }
 
 .logo {
@@ -41,7 +41,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 250px 150px 150px 150px;
-
     justify-content: center;
     align-items: center;
 }
@@ -65,19 +64,20 @@ ul {
 }
 
 .picture2 {
-    max-width: 300px;
+    max-width: 100px;
     border-radius: 10rem;
 }
 
 .who {
     font-weight: bolder;
-    font-size:  24px;
+    font-size: 1em;
     text-align: right;
 }
 
 .quote {
     text-align: right;
     max-width: 600px;
+    font-size: 1em;
 }
 
 .footer {
@@ -92,6 +92,7 @@ ul {
 }
 .last {
     display:flex;
+    gap:1em;
     align-items: center;
     padding: 1em;
     justify-content: center;
