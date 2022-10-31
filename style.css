@@ -43,6 +43,7 @@ ul {
     padding: 250px 150px 150px 150px;
     justify-content: center;
     align-items: center;
+
 }
 
 .name {
@@ -53,6 +54,7 @@ ul {
     padding:1rem;
     opacity:70%;
     border-radius: .5em;
+    text-align: center;
 }
 
 .two {
