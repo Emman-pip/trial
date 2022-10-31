@@ -1,0 +1,103 @@
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.header {
+    display:flex;
+    background-color: brown;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    opacity: 70%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:whitesmoke
+}
+
+ul {
+    display:flex;
+    gap:1rem;
+}
+
+.background {
+    display:flex;
+    flex-direction: column;
+    background-image: url("https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.6435-9/125834641_1315773095425287_4622103535689759627_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGk6dH21pRH0Llp-0TdpsbtO6NQ2ObNV6k7o1DY5s1XqaNP50QDK1ZWlfUk7ADMQscoQQt6GSI2f02WWzHIe5ps&_nc_ohc=1e8NS3Dz-rUAX8-PHMV&tn=cvFr7ukW-nlH1AnK&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfBTHWS8Br-fQ7siSZxOthaKeCchaADHTUVbYMQUz2qX7Q&oe=6384F284");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 150px 150px 150px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-weight: bolder;
+    color:blanchedalmond;
+    font-size:32px;
+    background-color:black;
+    padding:1rem;
+    opacity:70%;
+    border-radius: .5em;
+}
+
+.two {
+    display:flex;
+    align-items: center;
+    background-color: #00BBBB;
+    padding:1em;
+    justify-content: center;
+}
+
+.picture2 {
+    max-width: 300px;
+    border-radius: 10rem;
+}
+
+.who {
+    font-weight: bolder;
+    font-size:  24px;
+    text-align: right;
+}
+
+.quote {
+    text-align: right;
+    max-width: 600px;
+}
+
+.footer {
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    opacity: 60%;
+}
+.last {
+    display:flex;
+    align-items: center;
+    padding: 1em;
+    justify-content: center;
+}
+
+.picture3 {
+    max-width: 10em;
+    border-radius: 1rem;
+}
