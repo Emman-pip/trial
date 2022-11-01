@@ -1,106 +1,139 @@
 * {
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-.header {
-    display:flex;
-    background-color: brown;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    opacity: 90%;
+
+main {
+    background: linear-gradient(to top right, skyblue, white);
+    min-height: 100vh;
 }
 
-.logo {
-    font-size: 24px;
+.circle1 {
+    position:absolute;
+    background-color: white;
+    padding: 3rem;
+    top:50%;
+    left:20%;
+    border-radius:50%;
+    background: linear-gradient(to top right,rgba(255,255,255,0.6), skyblue);
+    z-index: 2;
+    width:19rem;
+    height: 19rem;
+}
+
+.circle2 {
+    position:absolute;
+    background-color: white;
+    padding: 3rem;
+    top:20%;
+    right:20%;
+    border-radius: 50%;
+    background: linear-gradient(to top right,rgba(255,255,255,0.6), skyblue);
+    z-index: 2;
+    width:10rem;
+    height: 10rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.window {
+    padding:1rem;
+    background: rgba(255,255,255,0.1);
+    background: linear-gradient(to left bottom,rgba(255,255,255,0.1), rgba(0,0,0,0.1));
+    z-index: 3;
+    border-radius: 1rem;
+    min-width: 10rem;
+    min-height: 5rem;
+    backdrop-filter:blur(1rem);
+    display:flex;
+    flex-direction: column;
+}
+
+.actual {
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.window {
+    display:flex;
+
+}
+
+.left {
+    padding: 1rem;
+    outline:1px solid black;
+    background-color:rgba(255,255,255,0.4);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction:column;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text1 {
+    font-size: 2rem;
     font-weight: 900;
+    color:rgb(48, 171, 193);
 }
 
 ul li {
-    list-style-type: none;
+    list-style-type:none;
 }
 
 a {
     text-decoration: none;
-    color:whitesmoke
+    color: rgb(92, 197, 188);
 }
 
-ul {
+.bottom ul {
     display:flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    color: rgb(28, 55, 53);
+    padding:1rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
     gap:1rem;
 }
 
-.background {
-    display:flex;
-    flex-direction: column;
-    background-image: url("https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.6435-9/125834641_1315773095425287_4622103535689759627_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGk6dH21pRH0Llp-0TdpsbtO6NQ2ObNV6k7o1DY5s1XqaNP50QDK1ZWlfUk7ADMQscoQQt6GSI2f02WWzHIe5ps&_nc_ohc=1e8NS3Dz-rUAX8-PHMV&tn=cvFr7ukW-nlH1AnK&_nc_ht=scontent.fmnl3-2.fna&oh=00_AfBTHWS8Br-fQ7siSZxOthaKeCchaADHTUVbYMQUz2qX7Q&oe=6384F284");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 250px 150px 150px 150px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.name {
-    font-weight: bolder;
-    color:blanchedalmond;
-    font-size:3em;
-    background-color:black;
-    padding:1rem;
-    opacity:70%;
-    border-radius: .5em;
-    text-align: center;
-}
-
-.two {
-    display:flex;
-    align-items: center;
-    background-color: #00BBBB;
-    padding:1em;
-    justify-content: center;
-}
-
-.picture2 {
-    max-width: 100px;
-    border-radius: 10rem;
-}
-
-.who {
-    font-weight: bolder;
-    font-size: 1em;
+.text2 {
     text-align: right;
+    font-size: 0.7rem;
+    font-weight: lighter;
 }
 
-.quote {
-    text-align: right;
-    max-width: 600px;
-    font-size: 1em;
-}
-
-.footer {
-    position:fixed;
-    bottom:0;
-    right:0;
-    left:0;
+.works {
     display: flex;
-    justify-content: center;
-    background-color: brown;
-    opacity: 60%;
+    gap:1rem;
 }
-.last {
-    display:flex;
-    gap:1em;
-    align-items: center;
-    padding: 1em;
-    justify-content: center;
+.box {
+    
+    outline: 1px solid black;
+    padding:4rem;
+    background-color: aquamarine;
+    background: linear-gradient(rgba(200,200,200,0.3), rgba(100,100,100,0.5));
+    border-radius: 1rem;
+    opacity: 50%;
+    transition-duration: 200ms;
 }
 
-.picture3 {
-    max-width: 10em;
-    border-radius: 1rem;
+.box:hover  {
+    opacity:100%;
 }
