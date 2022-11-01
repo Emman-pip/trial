@@ -125,8 +125,6 @@ a {
     flex-wrap:wrap;
 }
 .box {
-    
-    outline: 1px solid black;
     padding:4rem;
     background-color: aquamarine;
     background: linear-gradient(rgba(200,200,200,0.3), rgba(100,100,100,0.5));
