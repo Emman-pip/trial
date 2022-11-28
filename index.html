@@ -4,39 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <title>Log in</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/nazi-typewriter" type="text/css"/>
 </head>
 <body>
-    <div class="header">
-      <div class="left">
-        <div class="title">The Club</div>
-      </div>
-      <div class="right">
-        <div class="link"><a href="#">who are we?</a></div>
-      </div>
-    </div>
-    <main>
+  <div>
+  </div>
+  <main>
+    <fieldset class="welcome">
+      <h2>WELCOME TO LOREM WORLD TOURS</h2>
+      <p>Want a fake free tour? Sign up now!</p>
+    </fieldset>
 
-      <div class="window">
+    <form action="" method="">
+      <fieldset class="form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="tg">preferred tour guide</label>
+          <input type="radio" id="male" name="radio"><label for="male" required>Male</label>
+          <input type="radio" id="Female" name="radio"><label for="Female" required>Female</label>
+        </div>
+        <div>
+          <select name="tourtype" id="tour">
+            <option value="tourtype" required>--tour type--</option>
+            <option value="Full" required>Full tour</option>
+            <option value="Partial" required>Partial tour</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+        <div class="t">
+          <input type="checkbox" id="terms"><label for="terms">I am aware that the Terms and Conditions apply</label>
+        </div>
 
-        <div class="mainpage">
-          <div class="greetings">Welcome to the Club!</div>
-          <div class="username">
-            <input class="textbox" type="text" placeholder="  Username">
-          </div>
-          <div class="pass">
-            <input class="textbox" type="text" placeholder="  Password">
-          </div>
-          <button class="button">Log in</button>
-        </div>
-        
-        <div class="image">
-          <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=2000" alt="login">
-        </div>
-      
-      </div>
-    </main>
+      </fieldset>
+    </form>
     
+  </main>
 </body>
 </html>
